@@ -89,6 +89,10 @@ body{
     background-color: #EEEEEE;
 }
 
+.section.learn.contact{
+    background-color: #fff;
+}
+
 .section.learn .container{
     display: flex;
     align-items: center;
@@ -105,6 +109,80 @@ body{
     text-align: center;
 }
 
+/*
+Style de la page communauté
+*/
+.section.membres{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.section article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.section .article1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.section.membres article .membre{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 200px;
+    border-radius: 250px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.section.membres article .membre img{
+ max-width: 100%;
+ border-radius: 110px;
+ margin-top: 2px;
+ object-fit: cover;
+ object-position: center;
+}
+
+.section.membres article .membre1{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.section.membres article .membre1 img{
+ max-width: 100%;
+ margin-top: 2px;
+}
+
+.input{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #d4d2d2;
+    font-size: large;
+    padding-left: 30px;
+    border: none;
+}
+.area{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #d4d2d2;
+    font-size: large;
+    padding-left: 30px;
+    border: none;
+}
+.btn.form{
+    width: 400px;
+    border: none;
+    font-size: large;
+}
 footer{
     background-color: #0F2243;
     color: #fff;
