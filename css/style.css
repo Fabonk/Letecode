@@ -12,116 +12,102 @@ Couleur des butons
 champ de saisi
 */
 *{
-    padding:0;
     margin:0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
-.barmenu{
-    width: 100%;
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.section{
+    padding: 25px 0;
+}
+.navigation{
     background-color: #0F2243;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-nav{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-
-} 
-nav img{
-    padding: 5px 10px;
-    margin-bottom: 5px;
-}
-.titrelogo{
-    margin-right: 600px;
-    margin-left: -60px;
     color: white;
-    padding: 20px 20px;
+    padding: 8px 0;
 }
-nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    padding: 20px 20px;
 
+.mar-b-10{
+    margin-bottom: 10px;
 }
-nav ul li a{
-    color: white;
+
+.mar-b-20{
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #D72385;
+    color: #fff; 
+    padding: 8px 20px;
+    border-radius: 7px;
+}
+
+.btn.link{
     text-decoration: none;
-    font-weight: bold;
 }
-nav ul li a:focus{
-    text-decoration: underline;
-    transition: .3s;
+.navigation .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+.navigation img{
+    width:70px;
+    margin-right: 10px;
 }
 
-.baniere{
-    font-family: Arial, Helvetica, sans-serif;
+.navigation .menu{
+    display: flex;
+    align-items: center;
+}
+.navigation .menu-item{
+    display: inline;
+    padding: 0 8px;
+    padding-bottom: 5px;
+}
+.navigation .menu-item.active{
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+.section.header .container{
     text-align: center;
 }
 
-.baniere h1{
-    padding-top: 30px;
-    font-size: 40px;
-}
-.baniere p{
-    font-size: 25px;
-}
-.baniere button{
-    background-color: #D72385;
-    color:#EEEEEE ;
-    margin-top: 30px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: #EEEEEE;
-}
-.body{
-    display: inline-flex;
-    width: 100%;
-    height: 350px;
+.section.learn{
     background-color: #EEEEEE;
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.body .body1{
-    width: 40%;
-    margin-left: 20%;
-    padding-top: 60px;
-    padding-bottom: 20px;
-
-}
-.body .body2{
-    width: 40%;
-    margin-right: 20%;
-    padding-top: 40px;
-    padding-bottom: 20px;
-
-}
-.contenu{
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-.contenu ul{
-    list-style-type:none; 
 }
 
-li:before {
-    content: '- ';
- }
+.section.learn .container{
+    display: flex;
+    align-items: center;
+}
 
- footer{
+.section.learn img{
+    width: 500px;
+}
+
+.section.learn .bloc-item{
+    width: 50%;
+}
+.al-center{
+    text-align: center;
+}
+
+footer{
     background-color: #0F2243;
-    color: #EEEEEE;
-    height: 200px;
-    font-family: Arial, Helvetica, sans-serif;
- }
- .copyrite{
-    margin-left: 300px;
-    padding-top: 100px;
- }
+    color: #fff;
+    padding: 50px 0;
+}
 
