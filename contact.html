@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,60 +23,81 @@
     <nav class="navigation">
         <div class="container">
             <a href="" class="branding">
-                <img src="images/logo.png" alt="logo" srcset="">
+                <img src="images/logo.png" alt="logo">
                 <span>Letecode</span>
             </a>
+            
             <ul class="menu">
+                <div class="menu-fermer" onclick="closeMenuMobil()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                  
+                </div>
                 <li class="menu-item">
                     <a href="index.html">Accueil</a>
                 </li>
-                <li class="menu-item ">
+                <li class="menu-item">
                     <a href="community.html">Communauté</a>
                 </li>
-                <li class="menu-item ">
-                    <a href="cours.html ">Cours</a>
+                <li class="menu-item">
+                    <a href="cours.html">Cours</a>
                 </li>
                 <li class="menu-item active">
                     <a href="contact.html">Contacts</a>
                 </li>
             </ul>
+            
+            <div class="menu-burger" onclick="openMenuMobil()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            
         </div>
     </nav>
-    <section class="section learn contact">
-        <div class="container">
-            <div class="bloc-item">
-                <table>
-                    <tr>
-                        <td>Nom</td><td>Pays</td>
-                    </tr>
-                    <tr>
-                        <td><input class="input" type="text"></td><td><input class="input" type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>Adresse e-mail</td><td>Objectif</td>
-                    </tr>
-                    <tr>
-                        <td><input class="input" type="text"></td><td><input class="input" type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>Message</td>
-                    </tr>
-                    <tr><td><textarea class="area" name="" id="" cols="30" rows="10"></textarea></td><td></td></tr>
-                    <tr><td><button class="btn form">Envoyer le message</button></td></tr>
+<div class="bloc-formulaire">
+    <div class="enteteF">
+        <h2>Nous contacter</h2>
+    <p class="mar-b-20">Remplissez le formulaire pour nous laisser un message</p>
+    </div>
 
-                </table>
+                <form action="" method="post">
+                    <section class="B-Contact">
+                        <div class="B-input">
+                            <label for="Nom" class="mar-b-40">Nom</label>
+                            <input type="text" name="nom" class="input"><br>
+                            <label for="Nom" class="mar-b-40">Adresse e-mail</label>
+                            <input type="text" name="nom" class="input"><br>
+                        </div>
+
+                        <div class="B-input">
+                            <label for="Nom" class="mar-b-20">Pays</label>
+                            <select name="list-pays" class="input">
+                                <option class="mar-b-20">Choisir</option>
+                                <option class="mar-b-20">RDC</option>
+                                <option class="mar-b-20">Cameroun</option>
+                                <option class="mar-b-20">Tchad</option>
+                                <option class="mar-b-20">Gabon</option>
+                            </select><br>
+                            <label for="Nom" class="mar-b-40">Objectif</label>
+                            <input type="text" name="nom" class="input">
+                        </div>
+                    </section>
+                    <div class="B-Area">
+                    <label for="Message">Message</label>
+                    <textarea name="area" id="" cols="30" rows="10" class="area"></textarea><br>
+                    <button class="btn form">Envoyer le message</button>
+                    </div>
+                </form>
             </div>
-
-        </div>
-    </section>
 
     <section class="section learn">
         <div class="container">
-            <div class="bloc-item">
+            <div class="bloc-item al-center contactF">
                 <h2 class="mar-b-10">Abonnez-vous à la boite<br> aux lettres</h2>
                 <p class="mar-b-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, ut! Cum repudiandae, quaerat ut unde dolore odit provident iste dolores numquam nostrum sunt. Nulla id neque, incidunt temporibus asperiores dolores.</p>
             </div>
-            <div class="bloc-item al-center">
+            <div class="bloc-item newletter">
                <form action="cours.html" method="get">
                 <input class="input" type="text" value="Adresse email"><br>
                 <button class="btn form">S'abonner</button>
@@ -89,8 +110,9 @@
     
     <footer>
         <div class="container">
-            <p>Developpé par Letecode &copy;2023</p>
+            <p class="mar-b-30">Developpé par Letecode &copy;2023</p>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

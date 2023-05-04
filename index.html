@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,13 @@
                 <img src="images/logo.png" alt="logo">
                 <span>Letecode</span>
             </a>
+            
             <ul class="menu">
+                <div class="menu-fermer" onclick="closeMenuMobil()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                  
+                </div>
                 <li class="menu-item active">
                     <a href="index.html">Accueil</a>
                 </li>
@@ -39,6 +45,13 @@
                     <a href="contact.html">Contacts</a>
                 </li>
             </ul>
+            
+            <div class="menu-burger" onclick="openMenuMobil()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            
         </div>
     </nav>
 
@@ -55,7 +68,7 @@
             <div class="bloc-item al-center">
                 <img src="images/logo.png" alt="Logo">
             </div>
-            <div class="bloc-item">
+            <div class="bloc-item al-center">
                 <h2 class="mar-b-10">Vous avez droit <br> d'apprendre</h2>
                 <p class="mar-b-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, ut! Cum repudiandae, quaerat ut unde dolore odit provident iste dolores numquam nostrum sunt. Nulla id neque, incidunt temporibus asperiores dolores.</p>
             </div>
@@ -64,13 +77,13 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="mar-b-10">A propos de nous</h2>
-        <p class="mar-b-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aut ut quam facere, deleniti ratione modi perferendis, iste quo cum blanditiis voluptas id necessitatibus hic at voluptatum quidem eligendi earum!</p>
-        <p class="mar-b-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi repudiandae ducimus facilis soluta quia nobis commodi placeat. Facere tempore fugit minima blanditiis illo sapiente aspernatur beatae ducimus eos cupiditate?</p>
-        <p class="mar-b-10"> class="mar-b-20"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim aspernatur eum quas doloribus unde tempore accusantium minima soluta, eos esse quaerat porro illum sit libero voluptate pariatur sapiente ab aperiam!</p>
+            <h2 class="mar-b-30">A propos de nous</h2>
+        <p class="mar-b-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aut ut quam facere, <b>deleniti</b> ratione modi perferendis, iste quo cum blanditiis voluptas id necessitatibus hic at voluptatum quidem eligendi earum!</p>
+        <p class="mar-b-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi repudiandae ducimus facilis soluta quia nobis commodi placeat. Facere tempore fugit minima blanditiis illo sapiente aspernatur beatae ducimus eos cupiditate?</p>
+        <p class="mar-b-30"> class="mar-b-20"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim aspernatur eum quas doloribus unde tempore accusantium minima soluta, eos esse quaerat porro illum sit libero voluptate pariatur sapiente ab aperiam!</p>
     
-        <h3 class="mar-b-10">Les options</h3>
-        <ul class="mar-b-10">
+        <h3 class="mar-b-30">Les options</h3>
+        <ul class="mar-b-30">
             <li>Git & Github</li>
             <li>Html5</li>
             <li>CSS</li>
@@ -81,8 +94,11 @@
 
     <footer>
         <div class="container">
-            <p>Developpé par Letecode &copy;2023</p>
+            <p class="mar-b-30">Developpé par Letecode &copy;2023</p>
         </div>
     </footer>
+    <script src="js/scripts.js">
+
+    </script>
 </body>
 </html>

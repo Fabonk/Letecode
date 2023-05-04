@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,10 +23,16 @@
     <nav class="navigation">
         <div class="container">
             <a href="" class="branding">
-                <img src="images/logo.png" alt="logo" srcset="">
+                <img src="images/logo.png" alt="logo">
                 <span>Letecode</span>
             </a>
+            
             <ul class="menu">
+                <div class="menu-fermer" onclick="closeMenuMobil()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                  
+                </div>
                 <li class="menu-item">
                     <a href="index.html">Accueil</a>
                 </li>
@@ -40,9 +46,15 @@
                     <a href="contact.html">Contacts</a>
                 </li>
             </ul>
+            
+            <div class="menu-burger" onclick="openMenuMobil()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            
         </div>
-    </nav>
-
+</nav>
     <section class="section header">
         <div class="container">
             <h1 class="mar-b-10"> La plus puissante Communauté</h1>
@@ -53,9 +65,9 @@
 
     <section class="section learn">
         <div class="container">
-            <div class="bloc-item">
+            <div class="bloc-item al-center">
                 <h2 class="mar-b-10">Apprendre la<br> programmation</h2>
-                <p class="mar-b-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, ut! Cum repudiandae, quaerat ut unde dolore odit provident iste dolores numquam nostrum sunt. Nulla id neque, incidunt temporibus asperiores dolores.</p>
+                <p class="mar-b-30">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, ut! Cum repudiandae, quaerat ut unde dolore odit provident iste dolores numquam nostrum sunt. Nulla id neque, incidunt temporibus asperiores dolores.</p>
             </div>
             <div class="bloc-item al-center">
                 <img src="images/python.png" alt="Logo">
@@ -63,42 +75,20 @@
         </div>
     </section>
     
-    <section class="section membres">
+    <section class="Cmembres">
         <h1>Les membres</h1>
-        <article>
-            <div class="membre">
-                <img src="images/Photo.jpeg" alt="photo"><h3>Fabrice BONKILE</h3>
-            </div>
-            <div class="membre">
-                <img src="images/JeanC (Copier).jfif" alt="photo"><h3>Jean Claude MBIYAE</h3>
-            </div>
-            <div class="membre">
-                <img src="images/amour.jfif" alt="photo"><h3>Amour MIATELANA</h3>
-            </div>
-            <div class="membre">
-                <img src="images/Mikaba.jfif" alt="photo"><h3>Elisee Mikaba</h3>
-            </div>
-        </article>
-        <article>
-            <div class="membre">
-                <img src="images/Guenael.jfif" alt="photo"><h3>Guenael LUMBUMBU</h3>
-            </div>
-            <div class="membre">
-                <img src="images/Rabbin.png" alt="photo"><h3>Rabbin ELEMBO</h3>
-            </div>
-            <div class="membre">
-                <img src="images/benny.jfif" alt="photo"><h3>Benny SIMISI</h3>
-            </div>
-            <div class="membre">
-                <img src="images/daniel.jfif" alt="photo"><h3>Daniel SHABANI</h3>
-            </div>
-        </article>
+
+        <div class="list-membre">
+            
+        </div>
+        
     </section>
 
     <footer>
         <div class="container">
-            <p>Developpé par Letecode &copy;2023</p>
+            <p class="mar-b-30">Developpé par Letecode &copy;2023</p>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,57 +23,53 @@
     <nav class="navigation">
         <div class="container">
             <a href="" class="branding">
-                <img src="images/logo.png" alt="logo" srcset="">
+                <img src="images/logo.png" alt="logo">
                 <span>Letecode</span>
             </a>
+            
             <ul class="menu">
+                <div class="menu-fermer" onclick="closeMenuMobil()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                  
+                </div>
                 <li class="menu-item">
                     <a href="index.html">Accueil</a>
                 </li>
-                <li class="menu-item ">
+                <li class="menu-item">
                     <a href="community.html">Communauté</a>
                 </li>
                 <li class="menu-item active">
-                    <a href="cours.html ">Cours</a>
+                    <a href="cours.html">Cours</a>
                 </li>
                 <li class="menu-item">
                     <a href="contact.html">Contacts</a>
                 </li>
             </ul>
+            
+            <div class="menu-burger" onclick="openMenuMobil()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            
         </div>
-    </nav>
-    <section class="section membres">
-        <h1>Les cours</h1>
-        <article class="article">
-            <div class="membre1">
-                <img src="images/git.jpeg" alt="photo"><h3>Git et GitHubE</h3><p>5 heures</p>
+</nav>
+    <section class="Cmembres">
+        <div class="container">
+            <h1>Cours</h1>
+            <div class="cours-list">
+                
             </div>
-            <div class="membre1">
-                <img src="images/html5.jpg" alt="photo"><h3>HTML5</h3><p>5 heures</p>
-            </div>
-            <div class="membre1">
-                <img src="images/css3.png" alt="photo"><h3>CSS3</h3><p>5 heures</p>
-            </div>
-
-        </article class="article">
-        <article>
-            <div class="membre1">
-                <img src="images/flexbox.png" alt="photo"><h3>Flexbox</h3><p>5 heures</p>
-            </div>
-            <div class="membre1">
-                <img src="images/responsive.jfif" alt="photo"><h3>Responsive</h3><p>5 heures</p>
-            </div>
-            <div class="membre1">
-                <img src="images/animation.jfif" alt="photo"><h3>Animations</h3><p>5 heures</p>
-            </div>
-        </article>
+        </div>
+       
     </section>
 
     <section class="section learn">
         <div class="container">
-            <div class="bloc-item">
-                <h2 class="mar-b-10">Abonnez-vous à la boite<br> aux lettres</h2>
-                <p class="mar-b-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, ut! Cum repudiandae, quaerat ut unde dolore odit provident iste dolores numquam nostrum sunt. Nulla id neque, incidunt temporibus asperiores dolores.</p>
+            <div class="bloc-item al-center">
+                <h2 class="mar-b-30">Abonnez-vous à la boite<br> aux lettres</h2>
+                <p class="mar-b-30">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, ut! Cum repudiandae, quaerat ut unde dolore odit provident iste dolores numquam nostrum sunt. Nulla id neque, incidunt temporibus asperiores dolores.</p>
             </div>
             <div class="bloc-item al-center">
                <form action="cours.html" method="get">
@@ -81,15 +77,17 @@
                 <button class="btn form">S'abonner</button>
                </form>
             </div>
-
         </div>
     </section>
     
     
     <footer>
         <div class="container">
-            <p>Developpé par Letecode &copy;2023</p>
+            <p class="mar-b-30">Developpé par Letecode &copy;2023</p>
         </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
+   
 </body>
 </html>

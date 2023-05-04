@@ -22,7 +22,7 @@ body{
 }
 
 .container{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 .section{
@@ -80,7 +80,64 @@ body{
     font-weight: bold;
     border-bottom: 2px solid #fff;
 }
+.container .menu-burger{
+    display:none;
+}
 
+.container .menu-fermer{
+    display:none;
+}
+
+.container .menu-burger svg{
+    stroke: #fff;
+    width: 35px;
+    height: 35px;
+}
+
+/*Style responsif pour le menu*/
+@media screen and (max-width: 800px) {
+    .navigation .menu{
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        width: 300px;
+        height: 100%;
+        background-color: #0F2243;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.3s transform ease-in-out;
+       
+    }
+    .navigation .menu.open{
+        transform: initial;
+    }
+
+    .navigation .menu .menu-item a{
+        margin-right: 0%;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .container .menu-fermer{
+        display:block;
+    }
+    .container .menu-fermer svg{
+        stroke: #fff;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+      
+    }
+    .container .menu-burger{
+        display:block;
+        cursor: pointer;
+    }
+   
+    
+}
+/*Style desktop de la section learn de la page d'accueil*/
 .section.header .container{
     text-align: center;
 }
@@ -108,55 +165,180 @@ body{
 .al-center{
     text-align: center;
 }
+.section .container{
+    width: 100%;
+}
+/*Style mobile de la section learn*/
+@media screen and (max-width: 800px) {
+    .section.learn .container{
+        
+        display: block;
+        align-items: normal;
+    }
+    .section.learn .container .bloc-item.al-center{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+/*
+Style Desktop de la page communauté
+*/
+.Cmembres{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.Cmembres .list-membre{
+    display: flex;
+    width: 100%;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Cmembres .list-membre .membre-item{
+    width: 20%;
+    margin: 10px;
+    text-align: center;   
+}
+.Cmembres .list-membre .membre-item img{
+    width: 90%;
+    border-radius: 50%;
+}
+.container .mar-b-30{
+    margin: 20px;
+    text-align: justify;
+}
 
 /*
-Style de la page communauté
+Style Mobile de la page communauté
 */
-.section.membres{
-    margin-left: 200px;
-    margin-right: 200px;
+@media screen and (max-width: 800px){
+    .Cmembres{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Cmembres .list-membre .membre-item{
+        width: 40%;
+        margin: 10px;
+        text-align: center;   
+    }
 }
-.section article{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
+/*
+Style Desktop de la page cours
+*/
+.Cmembres{
+    margin-left: 130px;
+    margin-right: 130px;
 }
-.section .article1{
+.Cmembres .cours-list{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
+    width: 100%;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Cmembres .cours-list .cours-item{
+    width: 20%;
+    margin: 10px;   
+}
+.Cmembres .cours-list .cours-item img{
+    width: 100%;
+    background-color: #d4d2d2;
+}
+.Cmembres .container .mar-b-30{
+    margin: 20px;
+    text-align: justify;
 }
 
-.section.membres article .membre{
-    display: flex;
-    flex-direction: column;
-    width: 210px;
-    height: 200px;
-    border-radius: 250px;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.section.membres article .membre img{
- max-width: 100%;
- border-radius: 110px;
- margin-top: 2px;
- object-fit: cover;
- object-position: center;
+/*
+Style Mobil de la page cours
+*/
+@media screen and (max-width: 1080px){
+    .Cmembres{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Cmembres .cours-list .cours-item{
+        width: 60%;
+        margin: 10px;    
+    }
 }
 
-.section.membres article .membre1{
+/*
+Style Desktop de la page contact
+*/
+.bloc-formulaire{
+    margin-left: 220px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.B-Contact{
     display: flex;
-    flex-direction: column;
-    width: 210px;
-    height: 200px;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
-.section.membres article .membre1 img{
- max-width: 100%;
- margin-top: 2px;
+.B-input{
+    margin-right: 20px;
+    max-width: 50%;
 }
+
+.section.learn .container{
+    display: flex;
+    align-items: center;
+}
+
+.section.learn img{
+    width: 500px;
+}
+
+.section.learn .bloc-item{
+    width: 50%;
+}
+.al-center{
+    text-align: center;
+}
+.section .container{
+    width: 100%;
+}
+
+.bloc-item.al-center.contactF{
+    text-align: justify;
+    margin-left: 240px;
+}
+.bloc-item.al-center{
+    text-align: justify;
+    margin-left: 240px;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+.bloc-item{
+    margin-left: 10px;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+label{
+    display: block;
+    margin-bottom: 20px;
+}
+/*
+Style Mobil de la page contact
+*/
+@media screen and (max-width: 1080px){
+    .B-input{
+        width: 100%;
+    }
+    .section.learn .container{
+        flex-wrap: wrap;
+    }
+    .section.learn .container .bloc-item.al-center.contactF{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .section.learn .container .bloc-item.newletter{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
 
 .input{
     width: 400px;
@@ -188,4 +370,6 @@ footer{
     color: #fff;
     padding: 50px 0;
 }
+
+
 
